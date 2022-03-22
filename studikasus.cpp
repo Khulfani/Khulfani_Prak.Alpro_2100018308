@@ -35,4 +35,17 @@ int main(){
 		cin >> liter;
 		harga = pertamax(liter);
 	}
+	cout << endl << endl<< endl; 
+	cout<<" struk akan segera dicetak \n " ;\
+	ofstream spbu;
+	spbu.open("spbu.txt", ios::out);
+	spbu<<" STRUKTUR PEMBELIAN BENSIN\n";
+	spbu<<"==================================\n";
+	spbu<<" Nama Pembeli = "<<nama<<endl;
+	spbu<<" Jenis Bensin = "<<bensin<<endl;
+	spbu<<" Total Liter  = "<<liter<<endl;
+	spbu<<" Harga/liter  = "<<hrg<<endl;
+	spbu<<"==================================\n";
+	spbu<<"\n Total Pembelian : Rp "<< harga;
+	spbu.close();
 }
